@@ -1,0 +1,74 @@
+/*
+ *   Copyright © 2019-2021 PSPDFKit GmbH. All rights reserved.
+ *
+ *   The PSPDFKit Sample applications are licensed with a modified BSD license.
+ *   Please see License for details. This notice may not be removed from this file.
+ */
+apply plugin: 'com.android.application'
+
+// Versions for build targets and dependencies are imported from a separate file. This reduces the
+// overhead of updating versions, making it simpler and faster.
+apply from: '../versions.gradle'
+
+repositories {
+    google()
+    jcenter()
+
+    // The PSPDFKit library is loaded from the PSPDFKit Maven repository, added by this configuration.
+    maven {
+        url 'https://customers.pspdfkit.com/maven/'
+    }
+}
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.pspdfkit.example"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        // Modern applications can quickly grow in size. Since Android comes with native Multidex
+        // support starting with API 5.0 Lollipop (API 21), it is a good idea to enable Multidex.
+        // For APIs < API 21, it is necessary to use the Multidex support library (see dependencies below).
+        multiDexEnabled true
+
+        // This is used to inject the PSPDFKit license key directly into your app's AndroidManifest.xml file.
+        // Doing so will automatically initialize PSPDFKit during the app startup. Replace the
+        // LICENSE_KEY_GOES_HERE placeholder with your personal PSPDFKit license which you can find in
+        // your customer portal at https://customers.pspdfkit.com or when requesting a demo at
+        // https://pspdfkit.com/try.
+        manifestPlaceholders = ['pspdfkitLicenseKey': 'LICENSE_KEY_GOES_HERE']
+    }
+
+    // This enables support for Java 8 language features such as lambdas and more. For a full list
+    // of Java 8 features supported by Android, please consult https://developer.android.com/studio/write/java8-support.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        // PSPDFKit comes with automated Proguard rules, and doesn't require specific configuration
+        // inside your app. For more information on this, consult our Proguard online guide at:
+        // https://pspdfkit.com/guides/android/current/getting-started/integrating-pspdfkit#proguard
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // PSPDFKit is integrated from the PSPDFKit Maven repository. See the `repositories` block at the beginning
+    // of this file, which shows how to set up the repository in your app.
+    implementation "com.pspdfkit:pspdfkit:${versions.pspdfkit}"
+
+    // The Multidex support library is recommended when having minSdkVersion < 21. If your app has the
+    // minSdkVersion >= 21, you can remove this dependency as it won't be required. For more information
+    // about the Multidex libraries please refer to https://developer.android.com/studio/build/multidex#mdex-pre-l.
+    implementation "androidx.multidex:multidex:${versions.multidex}"
+}

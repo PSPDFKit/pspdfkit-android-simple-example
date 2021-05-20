@@ -1,0 +1,30 @@
+/*
+ *   Copyright © 2018-2021 PSPDFKit GmbH. All rights reserved.
+ *
+ *   The PSPDFKit Sample applications are licensed with a modified BSD license.
+ *   Please see License for details. This notice may not be removed from this file.
+ */
+
+// Globally used versions of this sample application.
+ext.versions = [
+    androidGradlePlugin: '4.1.1',
+    kotlin: '1.4.21',
+
+    minSdkVersion: 19,
+    compileSdkVersion: 29,
+    targetSdkVersion: 29,
+    buildToolsVersion: '29.0.3',
+
+    pspdfkit: '6.6.2',
+    pspdfkitVersionCode: 125702,
+
+    androidX: '1.0.0',
+    appcompat: '1.1.0',
+    androidMaterial: '1.2.0-alpha01',
+    recyclerView: '1.0.0',
+
+    rxjava: '2.2.7',
+    rxandroid: '2.1.1',
+    relinker: '1.4.1',
+    multidex: '2.0.0'
+]

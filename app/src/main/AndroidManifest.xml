@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~   Copyright © 2019-2021 PSPDFKit GmbH. All rights reserved.
+  ~
+  ~   The PSPDFKit Sample applications are licensed with a modified BSD license.
+  ~   Please see License for details. This notice may not be removed from this file.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pspdfkit.example">
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="MissingApplicationIcon">
+        <activity
+            android:name="com.pspdfkit.example.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PSPDFKit document display activity. -->
+        <activity
+            android:name="com.pspdfkit.ui.PdfActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!--
+        This meta-data element is used to automatically initialize PSPDFKit during the app
+        startup. To configure your personal license string, please modify the value configured
+        inside the build.gradle file.
+        -->
+        <meta-data
+            android:name="pspdfkit_license_key"
+            android:value="${pspdfkitLicenseKey}" />
+
+    </application>
+</manifest>
