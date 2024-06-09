@@ -39,8 +39,7 @@ android {
 
 dependencies {
 
-    // PSPDFKit is integrated from the PSPDFKit Maven repository. See the `repositories` block at the beginning
-    // of this file, which shows how to set up the repository in your app.
+    // PSPDFKit is integrated from the PSPDFKit Maven repository.
     implementation("com.pspdfkit:pspdfkit:2024.3.0")
 
 }
