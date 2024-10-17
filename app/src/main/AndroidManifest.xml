@@ -1,26 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~   Copyright © 2019-2024 PSPDFKit GmbH. All rights reserved.
+  ~
+  ~   The PSPDFKit Sample applications are licensed with a modified BSD license.
+  ~   Please see License for details. This notice may not be removed from this file.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <application
-        android:name=".App"
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Compose">
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="DataExtractionRules,MissingApplicationIcon">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Compose">
+            android:name="com.pspdfkit.example.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- PSPDFKit document display activity. -->
+        <activity
+            android:name="com.pspdfkit.ui.PdfActivity"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!--
+        This meta-data element is used to automatically initialize PSPDFKit during the app
+        startup. To configure your personal license string, please modify the value configured
+        inside the build.gradle file.
+        -->
+        <meta-data
+            android:name="pspdfkit_license_key"
+            android:value="${pspdfkitLicenseKey}" />
+
+    </application>
 </manifest>
