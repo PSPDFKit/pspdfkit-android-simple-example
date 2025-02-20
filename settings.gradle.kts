@@ -18,5 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "simple"
+rootProject.name = "simple-java"
 include(":app")
