@@ -1,6 +1,6 @@
-# PSPDFKit for Android - Simple Example
+# Nutrient for Android - Simple Example
 
-This is a simple example app for [PSPDFKit for Android](https://pspdfkit.com/pdf-sdk/android/).
+This is a simple example app for [Nutrient for Android](https://nutrient.io/pdf-sdk/android/).
 
 ## Prerequisites
 
@@ -27,8 +27,8 @@ This software is licensed under a [modified BSD license](LICENSE).
 
 ## Additional Resources
 
-* PSPDFKit for Android online guides: https://pspdfkit.com/guides/android/current/
-* PSPDFKit API reference:
-  * KDoc: https://pspdfkit.com/api/android/kdoc/
-  * Javadoc: https://pspdfkit.com/api/android/javadoc/
-* PSPDFKit technical customer support: https://pspdfkit.com/support/request/  
+* Nutrient for Android online guides: https://nutrient.io/guides/android/current/
+* Nutrient API reference:
+  * KDoc: https://nutrient.io/api/android/kdoc/
+  * Javadoc: https://nutrient.io/api/android/javadoc/
+* Nutrient technical customer support: https://nutrient.io/support/request/  
