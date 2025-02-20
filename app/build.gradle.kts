@@ -39,8 +39,8 @@ android {
 
 dependencies {
 
-    // PSPDFKit is integrated from the PSPDFKit Maven repository. See the `repositories` block at the beginning
+    // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("com.pspdfkit:pspdfkit:2024.7.0")
+    implementation("com.pspdfkit:pspdfkit:2024.8.1")
 
 }

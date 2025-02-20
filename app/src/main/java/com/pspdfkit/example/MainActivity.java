@@ -122,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
         final PdfActivityConfiguration pspdfkitConfiguration = new PdfActivityConfiguration.Builder(
                         getApplicationContext())
                 .scrollDirection(PageScrollDirection.HORIZONTAL)
-                .showPageNumberOverlay()
-                .showThumbnailGrid()
+                .pageNumberOverlayEnabled(true)
+                .thumbnailGridEnabled(true)
                 .theme(R.style.PSPDFSimple_Theme)
                 .themeDark(R.style.PSPDFSimple_Theme_Dark)
                 .fitMode(PageFitMode.FIT_TO_WIDTH)
