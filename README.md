@@ -1,6 +1,6 @@
-# PSPDFKit for Android - Simple Example
+# PSPDFKit for Android Example - Simple Jetpack Compose Example App
 
-This is a simple example app for [PSPDFKit for Android](https://pspdfkit.com/pdf-sdk/android/).
+A simple example app demonstrating [PSPDFKit for Android](https://pspdfkit.com/pdf-sdk/android/)'s composable API in the `com.pspdfkit.jetpack.compose` package.
 
 ## Prerequisites
 
@@ -8,17 +8,17 @@ This is a simple example app for [PSPDFKit for Android](https://pspdfkit.com/pdf
 
 ## Getting Started
 
-Clone and check out the Simple app repository on your local machine:
+Clone and check out this example app repository on your local machine:
 
 ```sh
-git clone https://github.com/PSPDFKit/pspdfkit-android-simple-example.git
-cd pspdfkit-android-simple-example
+git clone https://github.com/PSPDFKit/pspdfkit-jetpack-compose-pdf-viewer.git
+cd pspdfkit-jetpack-compose-pdf-viewer
 ```
 
 You can now open the project inside Android Studio, or build and install the app directly from the command line:
 
 ```sh
-./gradlew :installDebug
+./gradlew :app:installDebug
 ```
 
 ## License

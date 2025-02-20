@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~   Copyright © 2019-2024 PSPDFKit GmbH. All rights reserved.
-  ~
-  ~   The PSPDFKit Sample applications are licensed with a modified BSD license.
-  ~   Please see License for details. This notice may not be removed from this file.
-  -->
 <resources>
-    <color name="primary_color">#4537DE</color>
-    <color name="secondary_color">#2B1CC1</color>
-    <color name="primary_color_dark">#051628</color>
-    <color name="secondary_color_dark">#1E2428</color>
-    <color name="blue_darkmode">#777CF0</color>
-    <color name="dark">#28313E</color>
-    <color name="gray">#A8A8A8</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="white_50">#7FFFFFFF</color>
-    <color name="grey_70">#3D434E</color>
-    <color name="fab_gray">#8F9BF4</color>
-    <color name="gray_light">#D7DCE4</color>
-    <color name="red">#FF4015</color>
- </resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="offwhite">#CCFFFFFF</color>
+    <color name="black">#FF1B1B1F</color>
+    <color name="gray_10">#FFF0F3F9</color>
+    <color name="gray_50">#FF606671</color>
+</resources>

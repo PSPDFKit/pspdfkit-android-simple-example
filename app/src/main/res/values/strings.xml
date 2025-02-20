@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~   Copyright © 2019-2024 PSPDFKit GmbH. All rights reserved.
-  ~
-  ~   The PSPDFKit Sample applications are licensed with a modified BSD license.
-  ~   Please see License for details. This notice may not be removed from this file.
-  -->
-<resources>
-    <string name="app_name">Simple Example</string>
-    <string name="main_open_example">Open example PDF</string>
-    <string name="main_open_other">Open other document</string>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">PSPDFKit Simple Example</string>
+    <string name="settings">Settings</string>
+    <string name="light_mode_selected">Light mode is Selected</string>
+    <string name="dark_mode_selected">Dark mode is Selected</string>
+    <string name="dynamic_mode_selected">Dynamic color mode is On</string>
+    <string name="dynamic_mode_unselected">Dynamic color mode is Off</string>
+    <string name="default_theme">Default theme is Selected</string>
+    <string name="custom_theme">Custom theme is Selected</string>
+    <string name="storage_cleared">Local storage cleared</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="cache_summary">This will clear all the locally stored pdf entries and will re-fetch again.</string>
+    <string name="cache_title">Clear Storage</string>
 </resources>
