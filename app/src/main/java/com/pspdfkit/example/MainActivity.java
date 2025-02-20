@@ -1,5 +1,5 @@
 /*
- *   Copyright © 2019-2024 PSPDFKit GmbH. All rights reserved.
+ *   Copyright © 2019-2025 PSPDFKit GmbH. All rights reserved.
  *
  *   The PSPDFKit Sample applications are licensed with a modified BSD license.
  *   Please see License for details. This notice may not be removed from this file.
@@ -17,7 +17,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.pspdfkit.PSPDFKit;
+import com.pspdfkit.Nutrient;
 import com.pspdfkit.configuration.activity.PdfActivityConfiguration;
 import com.pspdfkit.configuration.page.PageFitMode;
 import com.pspdfkit.configuration.page.PageScrollDirection;
@@ -77,13 +77,13 @@ public class MainActivity extends AppCompatActivity {
      * using {@link #launchPdfActivity(Uri)}.
      */
     private void prepareAndShowDocument(@NonNull final Uri uri) {
-        // PSPDFKit supports direct opening of documents from various URI locations (including
+        // Nutrient supports direct opening of documents from various URI locations (including
         // assets,
         // local file URIs, content provider URIs, etc.).
-        if (PSPDFKit.isOpenableUri(this, uri)) {
+        if (Nutrient.isOpenableUri(this, uri)) {
             launchPdfActivity(uri);
         } else {
-            // Only document accessible as files are openable directly with PSPDFKit so we have to
+            // Only document accessible as files are openable directly with Nutrient so we have to
             // transfer other documents to application cache
             final DownloadRequest request =
                     new DownloadRequest.Builder(this).uri(uri).build();
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /**
      * Launches the {@link com.pspdfkit.ui.PdfActivity} for showing the document located at the
-     * given URI. The URI must be openable (i.e. {@link PSPDFKit#isOpenableUri(Context, Uri)} has to
+     * given URI. The URI must be openable (i.e. {@link Nutrient#isOpenableUri(Context, Uri)} has to
      * return {@code true} for the URI).
      */
     private void launchPdfActivity(@NonNull final Uri uri) {
