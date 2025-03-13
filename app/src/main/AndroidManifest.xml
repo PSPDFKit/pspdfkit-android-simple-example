@@ -27,12 +27,12 @@
             android:windowSoftInputMode="adjustNothing" />
 
         <!--
-        This meta-data element is used to automatically initialize PSPDFKit during the app
+        This meta-data element is used to automatically initialize Nutrient during the app
         startup. To configure your personal license string, please modify the value configured
         inside the build.gradle file.
         -->
         <meta-data
-            android:name="pspdfkit_license_key"
+            android:name="nutrient_license_key"
             android:value="${pspdfkitLicenseKey}" />
 
     </application>
