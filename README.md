@@ -28,7 +28,5 @@ This software is licensed under a [modified BSD license](LICENSE).
 ## Additional Resources
 
 * Nutrient for Android online guides: https://nutrient.io/guides/android/current/
-* Nutrient API reference:
-  * KDoc: https://nutrient.io/api/android/kdoc/
-  * Javadoc: https://nutrient.io/api/android/javadoc/
+* Nutrient API reference: https://nutrient.io/api/android/kdoc/
 * Nutrient technical customer support: https://nutrient.io/support/request/  
