@@ -1,14 +1,14 @@
-# Nutrient for Android - Simple Example
+# Nutrient Android SDK — Simple example
 
-This is a simple example app for [Nutrient for Android](https://nutrient.io/pdf-sdk/android/).
+This is a simple example app for [Nutrient Android SDK](https://nutrient.io/pdf-sdk/android/).
 
 ## Prerequisites
 
 - The latest stable Android Studio version available [here](https://developer.android.com/studio).
 
-## Getting Started
+## Getting started
 
-Clone and check out the Simple app repository on your local machine:
+Clone and check out the example app repository on your local machine:
 
 ```sh
 git clone https://github.com/PSPDFKit/pspdfkit-android-simple-example.git
@@ -25,8 +25,8 @@ You can now open the project inside Android Studio, or build and install the app
 
 This software is licensed under a [modified BSD license](LICENSE).
 
-## Additional Resources
+## Additional resources
 
-* Nutrient for Android online guides: https://nutrient.io/guides/android/current/
+* Nutrient Android SDK online guides: https://nutrient.io/guides/android/
 * Nutrient API reference: https://nutrient.io/api/android/kdoc/
 * Nutrient technical customer support: https://nutrient.io/support/request/  
