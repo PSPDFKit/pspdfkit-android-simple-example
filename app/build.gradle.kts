@@ -5,17 +5,18 @@
  *   Please see License for details. This notice may not be removed from this file.
  */
 
+
 plugins {
     id("com.android.application")
 }
 
 android {
     namespace = "com.pspdfkit.example"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = namespace
-        minSdk = 21
+        minSdk = 23
         targetSdk = compileSdk
         versionCode = 1
         versionName = "1.0"
@@ -41,6 +42,6 @@ dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:10.7.0")
+    implementation("io.nutrient:nutrient:10.8.0")
 
 }
