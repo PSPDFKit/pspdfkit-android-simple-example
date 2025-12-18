@@ -47,6 +47,6 @@ dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:10.9.0")
+    implementation("io.nutrient:nutrient:10.10.0")
 
 }
