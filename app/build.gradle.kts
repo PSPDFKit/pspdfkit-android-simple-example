@@ -4,6 +4,8 @@
  *   The PSPDFKit Sample applications are licensed with a modified BSD license.
  *   Please see License for details. This notice may not be removed from this file.
  */
+@file:Suppress("ktlint:standard:no-consecutive-comments", "UseTomlInstead")
+
 
 
 plugins {
@@ -48,6 +50,6 @@ dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:11.1.1")
+    implementation("io.nutrient:nutrient:11.2.0")
 
 }
