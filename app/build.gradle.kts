@@ -18,7 +18,7 @@ android {
 
     defaultConfig {
         applicationId = namespace
-        minSdk = 23
+        minSdk = 24
         targetSdk = compileSdk
         versionCode = 1
         versionName = "1.0"
@@ -48,8 +48,7 @@ android {
 
 dependencies {
 
-    // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
-    // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:11.5.0")
+    // Nutrient is published to Maven Central, so no custom repository setup is required.
+    implementation("io.nutrient:nutrient-android-sdk:11.6.0")
 
 }
