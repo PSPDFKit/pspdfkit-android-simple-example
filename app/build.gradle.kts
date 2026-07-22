@@ -49,6 +49,6 @@ android {
 dependencies {
 
     // Nutrient is published to Maven Central, so no custom repository setup is required.
-    implementation("io.nutrient:nutrient-android-sdk:11.6.0")
+    implementation("io.nutrient:nutrient-android-sdk:11.6.1")
 
 }
