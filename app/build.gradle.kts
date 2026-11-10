@@ -50,6 +50,12 @@ android {
 dependencies {
 
     // Nutrient is published to Maven Central, so no custom repository setup is required.
-    implementation("io.nutrient:nutrient-android-sdk:12.0.0")
+    implementation("io.nutrient:nutrient-android-sdk:12.1.0")
 
+
+    // RxJava for the examples that still use it. The SDK doesn't depend on RxJava, so every
+    // build of this app (monorepo, GitHub and packaged) declares it here. tools/validation/dependency_version_match_check.sh
+    // checks these versions against android/gradle/libs.versions.toml.
+    implementation("io.reactivex.rxjava3:rxjava:3.1.12")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
 }
